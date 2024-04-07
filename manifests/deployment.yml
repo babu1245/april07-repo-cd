@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: april07image4 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: april07image4
+  template:
+    metadata:
+      labels:
+        app: april07image4 
+    spec:
+      containers:
+        - name: april07image4 
+          image: march30acr.azurecr.io/april07image4
+          ports:
+          - containerPort: 80
