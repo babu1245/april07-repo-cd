@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: app1-nginx
-          image: docker pull march30acr.azurecr.io/april07image4
+          image: march30acr.azurecr.io/apriol07-cont-repo
           ports:
             - containerPort: 80
 ---
