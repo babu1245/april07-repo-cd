@@ -27,6 +27,9 @@ stages:
          repository: 'apriol07-cont-repo'
          command: 'buildAndPush'
          Dockerfile: '**/Dockerfile'
+         tags: |
+          $(tag)
+          $(Build.SourceVersion)
      - task: CopyFiles@2
        inputs:
         SourceFolder: '$(System.DefaultWorkingDirectory)/kube-manifests'
